@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muestra de Primitivas+DOM</title>
+    <link rel="stylesheet" href="Estilos.css" type="text/css"/>
+    <!--Links de bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+   
+</head>
+<body>
+    <header>
+        <h1><a href="#">¡Javascript!</a></h1>
+    </header>
+    <section class="row conteiner-fluid" id="todo">
+        <aside id="lateral" class="col-sm-3">
+            <select id="temas">
+                <option value="0">Seleccione...</option>
+                <option value="cajas">Cajitas</option>
+                <option value="encuesta">Encuesta</option>
+            </select>
+        </aside>  
+        <section id="principal" class="col-sm-9">
+        <article id="cajas" class="contenedor">
+            <h3>Trabajo con Tipo de Datos</h3>
+            <input type="text" id="numero" placeholder="Introduce el numero de cajitas"/>
+            <input type="text" id="color" placeholder="Capture el color de la caja"/>
+            <input type="text" id="borde" placeholder="Eliga el borde"/>
+            <input type="button" value="Mostrar" onclick="mostrarDatos()"/>
+        </article>    
+    
+            <article id="encuesta" class="contenedor">
+                <form name="quizform" onsubmit="return verificarRespuestas()">
+                <h1>Qué tanto sabes de Spider-Man</h1>
+                <h3>¿En qué película de Marvel aparece por primera vez Spider-Man?</h3>
+                <input type="radio" name="p1" value="a"/> Avengers: Infinity War
+                <input type="radio" name="p1" value="b"/> Capitan America: Civil War
+                <input type="radio" name="p1" value="c"/> Spider-Man: HomeComing
+
+                <h3>¿Cuál es el lema de Spider-Man? </h3>
+                <input type="radio" name="p2" value="a"/> Te quiero 3 millones
+                <input type="radio" name="p2" value="b"/> La justicia no espera ningun permiso
+                <input type="radio" name="p2" value="c"/> Un gran poder conlleva una gran responsabilidad
+
+                <h3>¿Cuál es el único Spider-Man en tener tela de araña de forma orgánica?</h3>
+                <input type="radio" name="p3" value="a"/> Andrew Garfield
+                <input type="radio" name="p3" value="b"/> Tobey Maguire
+                <input type="radio" name="p3" value="c"/> Tom Holland
+
+                <h3>¿Qué es lo primero que hace Spider-Man en el MCU? </h3>
+                <input type="radio" name="p4" value="a"/> Pedirle una selfie a Tony Stark
+                <input type="radio" name="p4" value="b"/> Atar las piernas de Ant-Man
+                <input type="radio" name="p4" value="c"/> Quitarle el escudo a Capitan America
+
+                <h3>¿Quiénes son los creadores del superhéroe?</h3>
+                <input type="radio" name="p5" value="a"/> Stan Lee y Steve Ditko
+                <input type="radio" name="p5" value="b"/> Stan Lee
+                <input type="radio" name="p5" value="c"/> Stan Lee y Jack Kirby
+
+                <br><input type="submit" value="Enviar">
+            </form>
+            </article>
+
+        <p id="resultado" class="res">
+            Mostrar Resultados Desde JavaScript
+        </p>
+        </section>
+    </section>
+<script src="funcionalidad.js"></script>
+<footer>
+   <h6>Realizado Por: Yaneth Medina</h6> 
+</footer>
+</body>
+</html>
+

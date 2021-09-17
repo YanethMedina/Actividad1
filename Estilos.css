@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+#todo{
+    height: 500px;
+}
+header{
+    background-color: #11052C;
+    text-align: center;
+}
+/*Regla anidada, aplicar un efecto al pasar el mouse*/
+header a{
+    text-decoration: none;
+    color: #FFE459;
+    display: block;
+    font-size: 2rem;
+}
+/*Evento para cambiar, (cambia text-decoration y el color)*/
+/*El RGBA aplica los efectos RGB y el A es para aplicar una transparencia o efecto alpha*/
+header a:hover{
+    text-decoration: none;
+    color: rgba(255, 255, 255, .4);
+}
+section{
+    background-color: #E2C2B9;
+    font-size: 1.2rem;
+}
+#lateral{
+    background-color: #B5FFD9;
+    text-align: center;
+    padding: 50px 100px;
+}
+footer{
+    background-color: #11052C;
+    color: #FFE459;
+    text-align: center;
+    padding: 20px 0;
+}
+.contenedor{
+    width: 99%;
+    padding: 10px;
+    margin: 10px auto;
+    text-align: center;
+    border: solid 1px #3D087B;
+    display: none;
+}
+#resultado{
+    transition: all .4s ease-in-out;
+}
+.res{
+    width: 99%;
+    line-height: 25px;
+    border: 1px solid #3D087B;
+    padding: 10px;
+    margin: 10px;
+}
+#numcajas{
+    width: 50px;
+    border: solid 1px;
+    height: 50px;
+    text-align: center;
+}
